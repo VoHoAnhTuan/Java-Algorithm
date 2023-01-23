@@ -1,3 +1,4 @@
+package SortingAlgorithms;
 /*
  * Ho Anh Tuan Vo
  * Shell Sort
@@ -7,7 +8,7 @@
  * In-place algorithm
  * 
  * Unstable algorithm
- * 
+ * Ascending order
  */
 
 public class ShellSort {
@@ -23,7 +24,7 @@ public class ShellSort {
 
                 while (j >= gap && array[j - gap] > newElement) { // j >= gap is to signal that it hits the front of the array
                     array[j] = array[j- gap];
-                    j -= gap;
+                    j -= gap; // move the range down
                 }
 
                 array[j] = newElement; // After shifting elements right by while loop, we insert the new element to its position

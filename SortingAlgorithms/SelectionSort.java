@@ -1,3 +1,4 @@
+package SortingAlgorithms;
 /*
  * Ho Anh Tuan Vo
  * Selection Sort
