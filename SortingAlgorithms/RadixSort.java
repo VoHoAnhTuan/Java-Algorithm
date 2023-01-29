@@ -34,7 +34,7 @@ public class RadixSort {
         // Use temp array to sort
         int[] temp = new int[numItems];
         for (int tempIndex = numItems - 1; tempIndex >= 0; tempIndex--) {
-            temp[--countingArray[getDigit(position, array[tempIndex], radix)]] = array[tempIndex];
+            temp[--countingArray[getDigit(position, array[tempIndex], radix)]] = array[tempIndex]; // larger digit has larger index
         }
 
         // Write back to original array

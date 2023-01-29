@@ -15,6 +15,7 @@ public class InsertionSort {
     public static void main(String[] args) {
         int[] array = {50, 49, 4, 1 , 7};
 
+        // Iterative method
         for ( int firstUnsortedIndex = 1; firstUnsortedIndex < array.length; firstUnsortedIndex++) {
             int newElement = array[firstUnsortedIndex];
 
@@ -25,7 +26,6 @@ public class InsertionSort {
 
             array[i] = newElement;
         }
-
 
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
